@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>레드향 주문하기</h1>
+  <form accept="">
+    <fieldset>
+      <legend>상품선택</legend>
+      <p><b>주문할 상품을 선택하세요.</b></p>
+      <label><input type="checkbox" value="s_3">선물용 3kg</label>
+      <label><input type="checkbox" value="s_5">선물용 5kg</label>
+      <label><input type="checkbox" value="f_3">가정용 3kg</label>
+      <label><input type="checkbox" value="f_5">가정용 5kg</label>
+      <ul>
+        <li>
+          <label><input type="checkbox" value="s_3">선물용 3kg</label>
+          <input type="number" min="0" max="5">개 (최대 5개)
+        </li>
+        <li>
+          <label><input type="checkbox" value="s_5">선물용 5kg</label>
+          <input type="number" min="0" max="3" value="1">개 (최대 3개)
+        </li>
+      </ul>
+      <p><b>포장선택</b></p>
+      <label><input type="radio" name="gift" value="yes">선물포장</label>
+      <label><input type="radio" name="gift" value="no">선물 포장 안함</label>
+    </fieldset>
+    <fieldset>
+      <legend>배송정보</legend>
+      <ul>
+        <li>
+          <label for="user-name">이름</label> 
+          <input type="text" id="user-name" autofocus>
+        </li>
+        <li>
+          <label for="addr">배송 주소</label>
+          <input type="text" id="adde" required>
+        </li>
+        <li>
+          <label for="email">이메일 주소</label>
+          <input type="text" id="email">
+        </li>
+        <li>
+          <label for="phone">연락처</label>
+          <input type="text" id="phone">
+        </li>
+      </ul>
+      <label for="user-id">아이디 6자 이상</label>
+      <input type="text" id="user-id"/>
+      <li>
+        <label for="t">배송지정</label>
+        <input type="date | month | week" required><br>
+        <input type="date">
+       </li>
+    </fieldset>
+    <fieldset>
+      <legend>이벤트와 새로운 소식</legend>
+      <input type="radio" name="mailing" id="mailing_y">
+      <label for="mailing_y">메일 수신</label>
+      <input type="radio" name="mailing" id="mailing_n" checked>
+      <label for="mailing_n">메일 수신 안 함</label>
+    </fieldset>
+    <fieldset>
+      <label>아이디:<input type="text" id="user-id" size="10"></label>
+      <label>비밀번호:<input type="password" id="user-pw" size="10"></label>
+      <input type="image" src="img/login.png" alt="로그인">
+    </fieldset>
+  </form>
+  <div>
+    <input type="submit" value="주문하기">
+    <input type="reset" value="취소하기">
+  </div>
+</body>
+</html>
