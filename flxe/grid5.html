@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .father{
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr;
+      height: 100vh;
+      grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+    }
+    .child{
+      background-color: aqua;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="father">
+    <div class="child">1fr</div>
+    <div class="child">2fr</div>
+    <div class="child">3fr</div>
+    <div class="child">4fr</div>
+    <div class="child">5fr</div>
+  </div>
+</body>
+</html>
